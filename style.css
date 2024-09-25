@@ -1,0 +1,226 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Overpass", sans-serif;
+}
+
+body {
+    height: 100vh;
+    background-color: hsl(216, 12%, 8%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#box-interactive {
+    display: flex;
+    flex-direction: column;
+    max-width: 324px;
+    width: 100%;
+    margin: auto;
+    height: 354px;
+    padding: 24px;
+    background-image: linear-gradient(180deg, hsl(213, 19%, 18%), hsl(215, 20%, 12%));
+    color: hsl(0, 0%, 100%);
+    border-radius: 14px;
+}
+
+.box-interactive__box-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    background-color: hsla(215, 10%, 43%, 0.144);
+}
+
+.box-interactive__image {
+    width: 15px;
+}
+
+.box-interactive__title {
+    margin-bottom: 20px;
+    color: hsl(0, 0%, 100%);
+}
+
+.box-interactive__text {
+    margin-bottom: 25px;
+    font-size: 14px;
+    color: hsl(217, 12%, 63%);
+}
+
+.box-interactive__numbers {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 25px;
+}
+
+.box-interactive {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    padding: 20px;
+    border-radius: 50%;
+    background-color: hsla(215, 10%, 43%, 0.144);
+    color: hsl(217, 12%, 63%);
+    cursor: pointer;
+}
+
+.box-interactive:hover {
+    background-color: hsl(217, 12%, 63%);
+    color: hsl(0, 0%, 100%);
+}
+
+.box-interactive:active {
+    background-color: hsl(24, 96%, 53%);
+    color: hsl(0, 0%, 100%);
+}
+
+.box-interactive__toggle {
+    background-color: hsl(24, 96%, 53%);
+    color: hsl(0, 0%, 100%);
+}
+
+.box-interactive__anchor {
+    text-decoration: none;
+    color: hsl(0, 0%, 100%);
+}
+
+.box-interactive__buttom {
+    padding: 14px;
+    background-color: hsl(24, 96%, 53%);
+    color: hsl(0, 0%, 100%);
+    border-radius: 40px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    cursor: pointer;
+}
+
+.box-interactive__buttom:active {
+    background-color: hsl(0, 0%, 100%);
+    color:  hsl(24, 96%, 53%);
+}
+
+#box-thank {
+    display: none;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    max-width: 324px;
+    width: 100%;
+    margin: auto;
+    height: 354px;
+    padding: 24px;
+    background-image: linear-gradient(180deg, hsl(213, 19%, 18%), hsl(215, 20%, 12%));
+    color: hsl(0, 0%, 100%);
+    border-radius: 14px;
+}
+
+.box-thank__image {
+    width: 140px;
+    margin: 8px 0 20px;
+}
+
+.box-thank__assessment {
+    margin: 6px 0 20px;
+    padding: 6px 14px;
+    font-size: 14px;
+    background-color: hsla(215, 10%, 43%, 0.144);
+    color: hsl(24, 64%, 60%);
+    border: 1px solid transparent;
+    border-radius: 40px;
+}
+
+.box-thank__title {
+    margin: 6px 0 12px;
+}
+
+.box-thank__text {
+    font-size: 14px;
+    text-align: center;
+    color: hsl(217, 12%, 63%);
+    line-height: 1.4;
+}
+
+@media screen and (min-width: 1440px) {
+    #box-interactive {
+        max-width: 408px;
+        height: 412px;
+        padding: 36px;
+        border-radius: 30px;
+    }
+
+    .box-interactive__box-image {
+        width: 46px;
+        height: 46px;
+        margin-bottom: 32px;
+        padding: 24px;
+        border-radius: 50%;
+    }
+
+    .box-interactive__image {
+        width: 20px;
+    }
+
+    .box-interactive__title {
+        margin-bottom: 14px;
+        font-size: 28px;
+        font-weight: 700;
+    }
+
+    .box-interactive__text {
+        margin-bottom: 28px;
+        font-size: 15px;
+    }
+
+    .box-interactive__numbers {
+        justify-content: space-between;
+        margin-bottom: 30px;
+    }
+
+    .box-interactive {
+        width: 50px;
+        height: 50px;
+        padding: 26px;
+    }
+
+    .box-interactive__buttom {
+        padding: 12px;
+        border-radius: 40px;
+        font-size: 15px;
+        letter-spacing: 2px;
+    }
+
+    #box-thank {
+        max-width: 408px;
+        height: 412px;
+        padding: 36px;
+        border-radius: 30px;
+    }
+
+    .box-thank__image {
+        width: 160px;
+        margin-bottom: 26px;
+    }
+
+    .box-thank__assessment {
+        margin-bottom: 26px;
+        font-size: 15px;
+    }
+
+    .box-thank__title {
+        font-size: 28px;
+        font-weight: 500;
+        margin: 6px 0 12px;
+    }
+
+    .box-thank__text {
+        font-size: 15px;
+    }
+}
