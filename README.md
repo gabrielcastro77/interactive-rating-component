@@ -2,7 +2,7 @@
 
 Obrigado por conferir esse desafio.
 
-Para desenvolver esse projeto, eu atilizei as tecnologia HTML, CSS e JavaScript.
+Para desenvolver esse projeto, eu atilizei as tecnolólias HTML, CSS e JavaScript.
 
 ## Projeto - Componente de classificação interativo
 
